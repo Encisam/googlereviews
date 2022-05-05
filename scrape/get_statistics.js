@@ -39,7 +39,7 @@ function get_statistics(url) {
             spansDiv.forEach((x) => {
               spansText.push(x.innerText);
             });
-            const found = spansText.find((el) => el.slice(5) == "2 años");
+            const found = spansText.find((el) => el.slice(5) == "un año");
 
             const totalReviews = document
               .querySelector(".z5jxId")

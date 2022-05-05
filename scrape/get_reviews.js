@@ -35,7 +35,7 @@ function run(url) {
                 .querySelector(".z5jxId")
                 .innerText.slice(0, -8); //TOTAL DE REVIEWS
 
-              if (totalChilds == totalReviews) {
+              if (totalChilds == totalReviews || totalChilds == 100) {
                 clearInterval(timer);
                 resolve();
               }

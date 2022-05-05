@@ -79,7 +79,6 @@ app.post("/get-reviews", async (req, res) => {
     frequency_penalty: 2,
     presence_penalty: 1,
   });
-  console.log(response1.data.choices[0].text);
   let review1 = response1.data.choices[0].text.replace(/\n/g, "");
   reviews.push(review1);
 
@@ -91,7 +90,6 @@ app.post("/get-reviews", async (req, res) => {
     frequency_penalty: 2,
     presence_penalty: 1,
   });
-  console.log(response2.data.choices[0].text);
   let review2 = response2.data.choices[0].text.replace(/\n/g, "");
   reviews.push(review2);
 
@@ -103,33 +101,8 @@ app.post("/get-reviews", async (req, res) => {
     frequency_penalty: 2,
     presence_penalty: 1,
   });
-  console.log(response3.data.choices[0].text);
   let review3 = response3.data.choices[0].text.replace(/\n/g, "");
   reviews.push(review3);
-
-  // const response4 = await openai.createCompletion("text-davinci-002", {
-  //   prompt: `Escribe una reseña basándote en estas notas:\n\nNegocio: ${negocio}\n${keywords}\n\n`,
-  //   temperature: 0.5,
-  //   max_tokens: 800,
-  //   top_p: 1.0,
-  //   frequency_penalty: 2,
-  //   presence_penalty: 1,
-  // });
-  // console.log(response4.data.choices[0].text);
-  // let review4 = response4.data.choices[0].text.replace(/\n/g, "");
-  // reviews.push(review4);
-
-  // const response5 = await openai.createCompletion("text-davinci-002", {
-  //   prompt: `Escribe una reseña basándote en estas notas:\n\nNegocio: ${negocio}\n${keywords}\n\n`,
-  //   temperature: 0.5,
-  //   max_tokens: 800,
-  //   top_p: 1.0,
-  //   frequency_penalty: 2,
-  //   presence_penalty: 1,
-  // });
-  // console.log(response5.data.choices[0].text);
-  // let review5 = response5.data.choices[0].text.replace(/\n/g, "");
-  // reviews.push(review5);
 
   res.send(reviews);
 });
@@ -143,7 +116,7 @@ app.post("/myreviews", async (req, res) => {
   query.forEach((user) => {
     users.push(user.user);
   });
-  console.log(users);
+
   //WRITE REVIEW EVERY 40 SEC
   var i = 0;
   function writing() {

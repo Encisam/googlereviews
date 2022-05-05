@@ -19,6 +19,10 @@ function sendUrl() {
     .then((data) => {
       //console.log(keywords);
       keywords(data);
+    })
+    .catch((err) => {
+      // Handle error
+      console.log("Error message: ", err);
     });
 }
 btnSend.addEventListener("click", sendUrl);
@@ -62,6 +66,10 @@ function sendKeywords() {
     .then((data) => {
       //console.log(reviews);
       reviews(data);
+    })
+    .catch((err) => {
+      // Handle error
+      console.log("Error message: ", err);
     });
 }
 btnSendKey.addEventListener("click", sendKeywords);
@@ -135,6 +143,10 @@ function sendReviews() {
     .then((res) => res.json())
     .then((data) => {
       makeChart(data);
+    })
+    .catch((err) => {
+      // Handle error
+      console.log("Error message: ", err);
     });
 }
 btnSendRev.addEventListener("click", sendReviews);
