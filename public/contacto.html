@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <!--HOJA DE ESTILOS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!--ICONOS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Encisamator v1.0</title>
+  </head>
+  <body>
+    <header>
+      <!--NAV-->
+      <nav class="navbar">
+        <div class="title">Encisamator</div>
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a class="active" href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Registro</a></li>
+          </ul>
+        </div>
+        <div class="collapse">
+          <a href="javascript:void(0);">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="principal-form">
+        <h2 class="formTitle">Contáctenos</h2>
+        <div class="data">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+          <label for="apellidos">Apellidos</label>
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            placeholder="Apellidos"
+          />
+          <label for="email">Correo electrónico</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+          />
+          <label for="asunto">Asunto</label>
+          <textarea
+            name="asunto"
+            id="asunto"
+            class="asunto"
+            placeholder="Escribe algo..."
+          ></textarea>
+        </div>
+        <button class="sendForm">Enviar</button>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <section class="footer">
+        <div class="footer-content">
+          <h3>Encisamator</h3>
+          <span>Se acabaron las malas reseñas</span>
+        </div>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+        <div class="cp-text">
+          <span>© Copyright 2022 Encisamator. All rights reserved.</span>
+        </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

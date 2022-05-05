@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <!--HOJA DE ESTILOS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!--ICONOS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Encisamator v1.0</title>
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--NAV-->
+      <nav class="navbar">
+        <div class="title">Encisamator</div>
+        <div class="links">
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Registro</a></li>
+          </ul>
+        </div>
+        <div class="collapse">
+          <a href="javascript:void(0);">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+      <!--MODAL MAIN SECTION-->
+      <section class="modal-home">
+        <button id="scrolltop">
+          <i class="fa fa-chevron-circle-up"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fa fa-close"></i>
+            <h2>
+              Por favor, considere leer estas instrucciones antes de usar
+              Encisamator
+            </h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              <strong class="red">ANTES DE TODO:</strong>
+              Su empresa deberá contar con un apartado de 'Google Reviews'. En
+              caso contrario,
+              <strong class="red">ENCISAMATOR NO FUNCIONARÁ.</strong>
+            </p>
+            <p>
+              1- Cuando cierre este menú, verá un apartado para introducir
+              texto.
+              <strong>Dicho apartado</strong> será para introducir la URL de
+              Google Reviews que pertenece a su empresa.
+            </p>
+            <img src="img/1.webp" alt="Primera instruccion" />
+            <p class="leyenda">Apartado a rellenar</p>
+            <p>
+              2- La URL que deberá introducir en el apartado podrá encontrarla
+              tecleando su empresa en 'Google' y si se fija en el bloque de la
+              derecha, aparecerán los datos de su empresa. Al lado de las
+              estrellas, podrá apreciar las reseñas que posee su empresa.
+            </p>
+            <img src="img/2.webp" alt="Segunda instruccion" />
+            <p class="leyenda">Enlace que debe abrir</p>
+            <p>
+              3- Haga click en el enlace que se le marca en la imagen anterior y
+              notará que se le abre una página que se antepone. Sin salir de esa
+              página, copie el enlace y péguelo en el apartado de Encisamator.
+            </p>
+            <img src="img/3.webp" alt="Tercera instruccion" />
+            <p class="leyenda">Enlace que debe copiar</p>
+            <p>
+              4- Cuando haya completado la tarea pulse el botón
+              <strong>"Enviar"</strong> para que Encisamator empiece a trabajar.
+            </p>
+            <br />
+            <p>
+              <strong
+                >Si tiene alguna duda, puede consultar este tutorial haciendo
+                click <a href="http://www.youtube.es">aquí</a></strong
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--PRINCIPAL SECTION-->
+      <section class="principal-home">
+        <div class="main-title"><h2></h2></div>
+        <div class="logo">
+          <img src="img/logo.webp" alt="logo" class="logo-img" />
+        </div>
+        <div class="url">
+          <label for="urlCompany">Introduce la URL de Google Reviews</label>
+          <input
+            type="text"
+            name="urlCompany"
+            class="urlCompany"
+            id="urlCompany"
+            placeholder="🔎"
+          />
+        </div>
+        <button class="send">Enviar</button>
+        <!--DUDAS-->
+        <div class="dudas">
+          <p>
+            <strong>¿Sigue teniendo dudas?</strong> Puede consultar otra vez el
+            tutorial haciendo click <a href="#" class="dudas-modal">aquí</a> o
+            <a href="contacto.html">contáctenos</a>
+          </p>
+        </div>
+      </section>
+      <!--MODAL KEYWORDS SECTION-->
+      <section class="modal-key">
+        <button id="scrolltop">
+          <i class="fa fa-chevron-circle-up"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fa fa-close"></i>
+            <h2>Keywords y negocio</h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              1- Cuando cierre este menú, verá dos apartados para introducir
+              texto.
+              <strong>El primero</strong> serán las palabras clave que hemos
+              generado sobre su empresa. Usted podrá añadir, suprimir o
+              modificar las palabra que desee. <br /><br />
+              <strong>NOTA:</strong>
+              <strong class="red"
+                >Procure que estas palabras estén separadas por comas.</strong
+              >
+              Por ejemplo: Profesionalidad,Trato cercano,Eficacia,etc...
+            </p>
+            <img src="img/4.webp" alt="Primera instruccion" />
+            <p class="leyenda">Información primer campo</p>
+            <p>
+              2- En <strong>el segundo apartado</strong> deberá introducir a qué
+              se dedica su empresa. Por ejemplo: Diseño web.
+            </p>
+            <img src="img/5.webp" alt="Primera instruccion" />
+            <p class="leyenda">Información segundo campo</p>
+            <p>
+              3- Cuando haya finalizado el proceso de rellenar los apartados,
+              pulse el botón "Enviar" para que Encisamator siga trabajando.
+            </p>
+            <br />
+            <p>
+              <strong
+                >Si tiene alguna duda, puede consultar este tutorial haciendo
+                click <a href="http://www.youtube.es">aquí</a></strong
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--KEYWORDS SECTION-->
+      <section class="principal-keywords">
+        <div class="main-title"><h2>Encisamator v1.0 ツ</h2></div>
+        <div class="logo">
+          <img src="img/logo.webp" alt="logo" class="logo-img" />
+        </div>
+        <div class="keywords">
+          <label for="keywords">Hemos generado estas keywords:</label>
+          <textarea id="keywords"></textarea>
+          <label for="negocio">¿A qué se dedica su empresa?</label>
+          <input
+            type="text"
+            name="negocio"
+            class="negocio"
+            id="negocio"
+            placeholder="💼"
+          />
+        </div>
+        <button class="sendKeywords">Enviar</button>
+        <div class="dudas">
+          <p>
+            <strong>¿Sigue teniendo dudas?</strong> Puede consultar otra vez el
+            tutorial haciendo click <a href="#" class="dudas-modal">aquí</a> o
+            <a href="contacto.html">contáctenos</a>
+          </p>
+        </div>
+      </section>
+      <!--MODAL REVIEWS SECTIONS-->
+      <section class="modal-review">
+        <button id="scrolltop">
+          <i class="fa fa-chevron-circle-up"></i>
+        </button>
+        <div class="modal-content">
+          <div class="modal-header">
+            <i class="fa fa-close"></i>
+            <h2>Reviews</h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              1- Cuando cierre este menú verá diferentes apartados. Éstos serán
+              las reseñas que hemos generado mediante los parámetros que usted
+              nos ha pasado. Estas reseñas podrá modificarlas a su antojo y
+              serán las que se publicarán en la página de reseñas de su empresa.
+              Por tanto, deberá analizar bien su contenido porque en ocasiones
+              pueden haber fallos en la ortografía o en la expresión.
+            </p>
+            <img src="img/6.webp" alt="Primera instruccion" />
+            <p class="leyenda">Apartado con reseñas</p>
+            <p>
+              2- Cuando haya finalizado el proceso de analizar los diferentes
+              apartados pulse el botón "Enviar".
+            </p>
+            <br />
+            <p>
+              <strong
+                >Si tiene alguna duda, puede consultar este tutorial haciendo
+                click <a href="http://www.youtube.es">aquí</a></strong
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--REVIEWS SECTION-->
+      <section class="principal-reviews">
+        <div class="main-title"><h2>Encisamator v1.0 ツ</h2></div>
+        <div class="logo">
+          <img src="img/logo.webp" alt="logo" class="logo-img" />
+        </div>
+        <h2>Hemos generado estas reviews:</h2>
+        <div class="reviews-container"></div>
+        <button class="sendReviews">Enviar</button>
+      </section>
+      <section class="chart-container">
+        <h2>Aquí tienes un resumen de tus reviews este último año</h2>
+        <canvas id="chart"></canvas>
+        <h2>
+          ¡Estamos publicando tus reseñas!, compruébalas
+          <a class="urlRev" href="">aquí</a>
+        </h2>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <section class="footer">
+        <div class="footer-content">
+          <h3>Encisamator</h3>
+          <span>Se acabaron las malas reseñas</span>
+        </div>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </li>
+        </ul>
+        <div class="cp-text">
+          <span>© Copyright 2022 Encisamator. All rights reserved.</span>
+        </div>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+    <script src="run.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+      integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
