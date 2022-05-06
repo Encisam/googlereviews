@@ -1,4 +1,4 @@
-# Reviews
+# Encisamator
 
 DAW final project. The main function of this project is to create reviews with AI from some keywords and automate the process of publishing that reviews.
 
