@@ -34,6 +34,7 @@ const textarea = document.querySelector("textarea");
 const logos = document.querySelectorAll(".logo img");
 
 const btnSend = document.querySelector(".send");
+const btnSendNext = document.querySelector(".sendNext");
 const btnSendKey = document.querySelector(".sendKeywords");
 const btnSendRev = document.querySelector(".sendReviews");
 const keywordsContainer = document.querySelector(".keywords");
@@ -67,7 +68,6 @@ btnCollapse.addEventListener("click", () => {
 if (location.pathname == "/index.html" || location.pathname == "/") {
   window.onload = function () {
     modalHome.style.display = "block";
-    //checkCookie();
   };
 
   spanHome.onclick = function () {
@@ -186,12 +186,20 @@ if (location.pathname == "/index.html" || location.pathname == "/") {
   });
 
   btnSendKey.addEventListener("click", () => {
-    btnSendKey.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Cargando...';
+    btnSendKey.innerHTML =
+      '<i class="fa fa-spinner fa-spin"></i> Generando reseñas...';
     btnSendKey.classList.toggle("loading");
   });
   btnSendRev.addEventListener("click", () => {
-    btnSendRev.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Cargando...';
+    btnSendRev.innerHTML =
+      '<i class="fa fa-spinner fa-spin"></i> Publicando reseñas...';
     btnSendRev.classList.toggle("loading");
+  });
+
+  btnSendNext.addEventListener("click", () => {
+    btnSendNext.innerHTML =
+      '<i class="fa fa-spinner fa-spin"></i> Generando keywords...';
+    btnSendNext.classList.toggle("loading");
   });
 }
 
@@ -225,7 +233,9 @@ if (location.pathname == "/index.html" || location.pathname == "/") {
 // function checkCookie() {
 //   let visited = getCookie("visited");
 //   if (visited == "yes") {
-//     modal.style.display = "none";
+//     modalHome.style.display = "none";
+//     modalKey.style.display = "none";
+//     modalRev.style.display = "none";
 //     typeWriter();
 //   } else {
 //     setCookie("visited", "yes", 1);

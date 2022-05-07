@@ -538,13 +538,18 @@ footer {
 .chart-container {
   display: none;
   margin: auto;
-  height: 60vh;
+  height: 55vh;
   width: 70vw;
   padding: 5rem 0;
+  text-align: center;
 }
 
 .chart-container h2 {
   font-size: 2rem;
+}
+
+.sendNext {
+  margin: 3rem auto;
 }
 
 /*=================================
@@ -648,4 +653,19 @@ footer {
   .main img {
     width: 200px;
   }
+}
+/*=================================
+          screenshot
+=================================*/
+.photo {
+  display: none;
+  text-align: center;
+}
+.screenshot {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.photo h2 {
+  font-size: 2rem;
 }
