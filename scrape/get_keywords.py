@@ -3,7 +3,7 @@ import sys
 
 language = "es"
 max_ngram_size = 1
-deduplication_thresold = 0.9
+deduplication_thresold = 0.5
 deduplication_algo = 'seqm'
 windowSize = 1
 numOfKeywords = 10
